@@ -11,3 +11,5 @@ connection.connect();
 connection.query('select user_id,user_name,email from p_users limit 10', function(error, results, fields) {
     console.log(results)
 });
+
+connection.end();
